@@ -1,4 +1,58 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+permalink: /
+hidden: true
+header:
+  overlay_color: "#5e616c"
+  overlay_filter: "0.5"
+  actions:
+    - label: "View My Work"
+      url: "/projects/"
+      class: "btn--primary btn--large"
+    - label: "Contact Me"
+      url: "/contact/"
+      class: "btn--inverse btn--large"
+title: "Yangchi K."
+excerpt: "**Full-Stack Developer** with expertise in web development, game development, and software solutions.<br><small>NASA Space Apps Challenge Global Nominee | 42 Paris Graduate</small>"
+
+intro: 
+  - excerpt: 'Currently working at **Vertesia** in the Greater Paris Metropolitan Region. <br>Passionate about creating innovative solutions and contributing to meaningful projects.'
+
+feature_row:
+  - title: "🌐 Web Development"
+    excerpt: "Full-stack web applications with modern frameworks and technologies. Experience with e-commerce platforms, social applications, and responsive design."
+  - title: "🎮 Game Development" 
+    excerpt: "Unity game development with engaging mechanics and interactive design. Creating immersive experiences with focus on user engagement."
+  - title: "⚙️ Software Solutions"
+    excerpt: "Custom software solutions and system architecture design. Problem-solving through innovative technical approaches."
+
+feature_row2:
+  - title: "About Me"
+    excerpt: 'I completed the common core at **Ecole 42 Paris** in July 2023, embracing collaborative, project-based learning. My experience includes working on diverse projects from e-commerce platforms to social applications, always focusing on user experience and technical excellence.<br><br>**Key Achievements:**<br>• NASA International Space Apps Challenge Global Nominee<br>• Multiple awards in Space Apps Challenge<br>• RNCP 6 Certification in Software Development<br>• CS50 x Puzzle Day 2023 Certificate'
+    url: "/about/"
+    btn_label: "Learn More"
+    btn_class: "btn--primary"
+
+recent_projects:
+  - title: "Featured Projects"
+    excerpt: '**TPMC** - Website for Non-Profit Association<br>**Plower** - Social Commerce Web Application<br>**Unity Games** - Various interactive game projects<br>**E-commerce Solutions** - Full-stack development for startups'
+    url: "/projects/"
+    btn_label: "View All Projects" 
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+<div class="feature__wrapper">
+  <div class="feature__item--center">
+    <div class="archive__item-body">
+      <h2 class="archive__item-title">Skills & Expertise</h2>
+    </div>
+  </div>
+</div>
+
+{% include feature_row %}
+
+{% include feature_row id="feature_row2" type="left" %}
+
+{% include feature_row id="recent_projects" type="right" %}
